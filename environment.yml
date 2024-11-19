@@ -112,11 +112,11 @@ dependencies:
   - pip=24.2=py310h06a4308_0
   - pixman=0.40.0=h7f8727e_1
   - psutil=5.9.0=py310h5eee18b_0
-  - pyg=2.5.2=py310_torch_2.2.0_cu118
+  - pyg=2.5.0=py310_torch_2.2.0_cu118
   - pyparsing=3.2.0=py310h06a4308_0
   - pysocks=1.7.1=py310h06a4308_0
   - python=3.10.15=he870216_1
-  - pytorch=2.2.1=py3.10_cuda11.8_cudnn8.7.0_0
+  - pytorch=2.2.0=py3.10_cuda11.8_cudnn8.7.0_0
   - pytorch-cluster=1.6.3=py310_torch_2.2.0_cu118
   - pytorch-cuda=11.8=h7e8668a_6
   - pytorch-lightning=2.4.0=pyhd8ed1ab_0
@@ -134,10 +134,9 @@ dependencies:
   - tesseract=5.2.0=h6a678d5_0
   - threadpoolctl=3.5.0=py310h2f386ee_0
   - tk=8.6.14=h39e8969_0
-  - torchaudio=2.2.1=py310_cu118
+  - torchaudio=2.2.0=py310_cu118
   - torchmetrics=1.5.2=pyhe5570ce_0
   - torchtriton=2.2.0=py310
-  - torchvision=0.17.1=py310_cu118
   - tqdm=4.66.5=py310h2f386ee_0
   - typing-extensions=4.11.0=py310h06a4308_0
   - typing_extensions=4.11.0=py310h06a4308_0
@@ -205,7 +204,6 @@ dependencies:
       - ptyprocess==0.7.0
       - pure-eval==0.2.3
       - pycparser==2.22
-      - pyg-lib==0.4.0+pt22cu118
       - pygments==2.18.0
       - pyquaternion==0.9.9
       - python-dateutil==2.9.0.post0

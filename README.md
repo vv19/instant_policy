@@ -21,6 +21,7 @@ cd instant_policy
 ```
 conda env create -f environment.yml
 conda activate ip_env
+pip install pyg-lib -f https://data.pyg.org/whl/torch-2.2.0+cu118.html
 pip install -e .
 ```
 
