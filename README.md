@@ -81,6 +81,7 @@ To reach the best performance when deploying the current implementation of Insta
 - Tasks should follow Markovian assumption (there is no history of observations).
 - Demonstrations should be short and consistent, without a lot of task irrelevant motions.
 - Inference parameters (e.g. number of demonstrations and number of diffusion timesteps) can greatly influence the performance.
+- Model uses segmented point clouds expressed in the end-effector frame -- when an object is grasped, there needs to be at least one more object in the observation to ground the motion.
 - Compiling the model and using fewer diffusion steps will result in significantly faster inference times.
 
 If the deployed policy doesn't perform well, please feel free to contact me, I'll be happy!
@@ -90,6 +91,11 @@ If the deployed policy doesn't perform well, please feel free to contact me, I'l
 If you find our paper interesting or this code useful in your work, please cite our paper:
 
 ```
-TBD.
+@article{vosylius2024instant,
+  title={Instant Policy: In-Context Imitation Learning via Graph Diffusion},
+  author={Vosylius, Vitalis and Johns, Edward},
+  journal={arXiv preprint arXiv:2411.12633},
+  year={2024}
+}
 ```
 
