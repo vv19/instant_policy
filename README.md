@@ -53,7 +53,8 @@ Try it out with different tasks, e.g. `open_box` or `toilet_seat_down`! More in 
 
 Every robot (and its user) uses different controllers and gets observations in different ways. 
 In `deployment.py`, we provide examples of how to use Instant Policy for deployment on any robotic manipulator using parallel-jaw gripper. 
-Plug in your controller, get observations in a form of segmented point clouds, end-effector poses and gripper states, and you are all set! 
+Plug in your controller, get observations in a form of segmented point clouds, end-effector poses and gripper states, and you are all set!
+Note that in our experiments, we found that two depth cameras placed around the scene worked well.
 
 ## Training and Fine-tuning
 
