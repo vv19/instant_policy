@@ -85,7 +85,7 @@ To reach the best performance when deploying the current implementation of Insta
 - Model uses segmented point clouds expressed in the end-effector frame -- when an object is grasped, there needs to be at least one more object in the observation to ground the motion.
 - Compiling the model and using fewer diffusion steps will result in significantly faster inference times.
 
-If the deployed policy doesn't perform well, please feel free to contact me, I'll be happy!
+If the deployed policy doesn't perform well, please feel free to contact me, I'll be happy to help!
 
 # Citing
 
