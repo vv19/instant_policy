@@ -92,11 +92,11 @@ If the deployed policy doesn't perform well, please feel free to contact me, I'l
 If you find our paper interesting or this code useful in your work, please cite our paper:
 
 ```
-@article{vosylius2024instant,
+@inproceedings{vosylius2024instant,
   title={Instant Policy: In-Context Imitation Learning via Graph Diffusion},
   author={Vosylius, Vitalis and Johns, Edward},
-  journal={arXiv preprint arXiv:2411.12633},
-  year={2024}
+  booktitle = {Proceedings of the International Conference on Learning Representations (ICLR)},
+  year={2025}
 }
 ```
 
