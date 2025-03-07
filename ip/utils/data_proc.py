@@ -187,15 +187,17 @@ def extract_waypoints(traj, traj_states, num_waypoints):
         if traj_states[i] != traj_states[i - 1] and i not in waypoints:
             waypoints.append(i)
     waypoints.sort()
-
+    # Add more waypoints where the trajectory is close to the previous waypoint to smooth out the trajectory.
     for i in range(1, len(traj_states)):
         err = pose_error(traj[i], traj[i - 1], rot_scale=1)
         closest_waypoint = np.argmin([abs(i - w) for w in waypoints])
-        if err < 3.5e-3 and abs(i - waypoints[closest_waypoint]) > 5:
+        if err < 3.5e-3 and abs(i - waypoints[closest_waypoint]) > 5 and (len(waypoints) < num_waypoints): # if waypoints are enough, skip this.
             waypoints.append(i)
 
     waypoints.sort()
-    wp_to_add = num_waypoints - len(waypoints)
+    wp_to_add = max(0, num_waypoints - len(waypoints)) # If there are still too few waypoints, add some. Otherwise, exit.
+    if wp_to_add == 0:
+        return waypoints
 
     wp_segment_dist = [pose_error(traj[waypoints[i]], traj[waypoints[i + 1]], rot_scale=1) for i in
                        range(len(waypoints) - 1)]
